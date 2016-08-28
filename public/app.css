@@ -43,6 +43,7 @@ h3{
     flex-flow: row wrap;
     background-color: white;
     align-items: center;
+    
     justify-content: space-around;
 }
 .texts{
@@ -55,16 +56,71 @@ h3{
 
 .title{
     font-family: 'Itim', cursive;
+    font-size: 20px;
+    text-align: center;
 }
 
 .objectives {
     list-style-type: none;
     font-family: 'Itim', cursive;
-    text-align: center;
+    text-align: left;
 }
 
 .item{
     padding: 25px;
     font-size: 20px;
+}
+
+.discription{
+font-family: 'Itim', cursive;
+
+}
+
+.white-section{
+    padding: 25;
+    background-color: white;
+}
+
+.lablist{
+   font-family: 'Itim', cursive; 
+   list-style-type: none;
+   display: flex;
+   flex-flow: row wrap; 
+   align-items: center;
+    
+    justify-content: space-around;
+}
+
+.lab{
+    font-family: 'Itim', cursive;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 300px;
+    flex-grow: 0;
+    text-align: center;
+}
+
+.force{
+    font-family: 'Itim', cursive;
+}
+
+.calendar{
+    font-family: 'Itim', cursive;
+}
+
+.head{
+    font-family: 'Itim', cursive;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+}
+
+.link{
+    font-family: 'Itim', cursive;
 }
 
