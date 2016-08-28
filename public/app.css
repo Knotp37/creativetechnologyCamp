@@ -1,29 +1,34 @@
-body{
+body {
     margin: 0;
     margin-top: 50px;
     background-color: #efefef
 }
 
-h1{
+h1 {
     color: #ff0000;
     font-family: 'Itim', cursive;
 }
-h3{
+
+h3 {
     color: orange;
     font-family: 'Itim', cursive;
 }
-#lab{
-    color: #00ff00
 
+#lab {
+    color: #00ff00 a:hover {
+        background-color: grey;
+    }
+    >
 }
-.menu{
+
+.menu {
     margin: 25px;
     color: dimgray;
     font-family: 'Itim', cursive;
-
-    text-decoration :  none;
+    text-decoration: none;
 }
-.navigation-bar{
+
+.navigation-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,30 +38,30 @@ h3{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-end;
-
     height: 50px;
-
     background-color: white;
 }
-.header{
+
+.header {
     display: flex;
     flex-flow: row wrap;
     background-color: white;
     align-items: center;
-    
     justify-content: space-around;
 }
-.texts{
+
+.texts {
     padding: 25px;
 }
 
-.image{
+.image {
     width: 500px;
 }
 
-.title{
+.title {
     font-family: 'Itim', cursive;
-    font-size: 20px;
+    font-size: 36px;
+    list-style-type: none;
     text-align: center;
 }
 
@@ -66,32 +71,30 @@ h3{
     text-align: left;
 }
 
-.item{
+.item {
     padding: 25px;
     font-size: 20px;
 }
 
-.discription{
-font-family: 'Itim', cursive;
-
+.discription {
+    font-family: 'Itim', cursive;
 }
 
-.white-section{
+.white-section {
     padding: 25;
     background-color: white;
 }
 
-.lablist{
-   font-family: 'Itim', cursive; 
-   list-style-type: none;
-   display: flex;
-   flex-flow: row wrap; 
-   align-items: center;
-    
+.lablist {
+    font-family: 'Itim', cursive;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
-.lab{
+.lab {
     font-family: 'Itim', cursive;
     height: 400px;
     display: flex;
@@ -103,24 +106,49 @@ font-family: 'Itim', cursive;
     text-align: center;
 }
 
-.force{
+.force {
     font-family: 'Itim', cursive;
 }
 
-.calendar{
+.calendar {
     font-family: 'Itim', cursive;
 }
 
-.head{
+.head {
     font-family: 'Itim', cursive;
 }
 
-.image{
+.image {
     width: 300px;
     height: 300px;
 }
 
-.link{
+.link {
     font-family: 'Itim', cursive;
 }
 
+.timetable {
+    border-style: solid;
+    border-width: 1px;
+    border-color: orangered;
+    padding: 25px;
+    width: 100%;
+}
+
+.timetable td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: orangered;
+    padding: 25px;
+}
+
+.force {
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+}
