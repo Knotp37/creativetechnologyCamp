@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    margin-top: 50px;
+    background-color: #efefef
+}
+
+h1{
+    color: #ff0000;
+    font-family: 'Itim', cursive;
+}
+h3{
+    color: orange;
+    font-family: 'Itim', cursive;
+}
+#lab{
+    color: #00ff00
+
+}
+.menu{
+    margin: 25px;
+    color: dimgray;
+    font-family: 'Itim', cursive;
+
+    text-decoration :  none;
+}
+.navigation-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 50px;
+
+    background-color: white;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.texts{
+    padding: 25px;
+}
+
+.image{
+    width: 500px;
+}
+
+.title{
+    font-family: 'Itim', cursive;
+}
+
+.objectives {
+    list-style-type: none;
+    font-family: 'Itim', cursive;
+    text-align: center;
+}
+
+.item{
+    padding: 25px;
+    font-size: 20px;
+}
+
