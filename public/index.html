@@ -5,81 +5,6 @@
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
     <link rel="stylesheet" href="app.css" />
-
-    <style>
-        div {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: relative;
-            -webkit-animation-name: hoveringmouse;
-            /* Chrome, Safari, Opera */
-            -webkit-animation-duration: 4s;
-            /* Chrome, Safari, Opera */
-            animation-name: example;
-            animation-duration: 4s;
-            animation: infinite;
-        }
-        /* Chrome, Safari, Opera */
-        
-        @-webkit-keyframes example {
-            0% {
-                background-color: red;
-                left: 0px;
-                top: 0px;
-            }
-            25% {
-                background-color: yellow;
-                left: 200px;
-                top: 0px;
-            }
-            50% {
-                background-color: blue;
-                left: 200px;
-                top: 200px;
-            }
-            75% {
-                background-color: green;
-                left: 0px;
-                top: 200px;
-            }
-            100% {
-                background-color: red;
-                left: 0px;
-                top: 0px;
-            }
-        }
-        /* Standard syntax */
-        
-        @keyframes example {
-            0% {
-                background-color: red;
-                left: 0px;
-                top: 0px;
-            }
-            25% {
-                background-color: yellow;
-                left: 200px;
-                top: 0px;
-            }
-            50% {
-                background-color: blue;
-                left: 200px;
-                top: 200px;
-            }
-            75% {
-                background-color: green;
-                left: 0px;
-                top: 200px;
-            }
-            100% {
-                background-color: red;
-                left: 0px;
-                top: 0px;
-            }
-        }
-    </style>
-
 </head>
 
 <body>
@@ -125,7 +50,47 @@
 
             </li>
         </ol>
+
+        <h2 class="slideshow">รูป Slide Show ของแต่ละ Lab</h2>
+
+        <div class="slideshow" style="max-width:800px;position:relative">
+
+            <img class="mySlides" src="images/unitylogo.png" style="width:300">
+            <img class="mySlides" src="images/mayalogo.png" style="width:300">
+            <img class="mySlides" src="images/html5logo.png" style="width:300">
+
+
+            <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
     </section>
+
+    <button class="mdtbutton" type="MDT" onclick="alert('ยินดีต้อนรับสู่ MDT')">ลองกดดูสิ</button>
     <h3 class="title"><b id="detail">รายละเอียดเบื้องต้น</h3>
     <ul>
         <li class="force">เป็น<strong>นักศึกษา</strong>ในสาขาวิชา<strong>เทคโนโลยีมีเดีย</strong>
