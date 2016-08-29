@@ -130,7 +130,7 @@ h3 {
 .timetable {
     border-style: solid;
     border-width: 1px;
-    border-color: orangered;
+    border-color: green;
     padding: 25px;
     width: 100%;
 }
@@ -138,7 +138,7 @@ h3 {
 .timetable td {
     border-style: solid;
     border-width: 1px;
-    border-color: orangered;
+    border-color: green;
     padding: 25px;
 }
 
@@ -151,4 +151,35 @@ h3 {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.calendar {
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+
+
 }
