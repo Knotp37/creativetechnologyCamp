@@ -16,7 +16,7 @@ h3 {
 
 #lab {
     color: #00ff00;
-    background-color: grey;
+    background-color: antiquewhite;
 }
 
 .menu {
@@ -75,8 +75,9 @@ h3 {
     font-size: 20px;
 }
 
-.discription {
+.dscription {
     font-family: 'Itim', cursive;
+    list-style-type: none;
 }
 
 .white-section {
@@ -129,7 +130,7 @@ h3 {
 .timetable {
     border-style: solid;
     border-width: 1px;
-    border-color: green;
+    border-color: antiquewhite;
     padding: 25px;
     width: 100%;
 }
@@ -137,6 +138,7 @@ h3 {
 .timetable td {
     border-style: solid;
     border-width: 1px;
+    text-decoration: none;
     border-color: green;
     padding: 25px;
 }
@@ -155,18 +157,17 @@ h3 {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    border-bottom: 2px dotted black;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
-    color: #fff;
+    color: antiquewhite;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
